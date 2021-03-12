@@ -38,7 +38,7 @@
   background: rgba(121, 132, 175, 0.08);
   border-radius: 0px 100px 100px 0px;
   border-left: none;
-  width: 92%;
+  width: 99%;
   p {
     font-weight: bold;
   }
@@ -51,7 +51,7 @@
 }
 
 .sidebar__scroll {
-  width: 240px;
+  // width: 240px;
 
   & > div {
     height: calc(100vh - 60px);
@@ -104,7 +104,7 @@
 
 .sidebar__link {
   height: 50px;
-  width: 240px;
+  // width: 240px;
   transition: all 0.3s;
   position: relative;
   cursor: pointer;
