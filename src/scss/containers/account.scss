@@ -20,12 +20,11 @@
   .bckgrndImg {
     height: 100vh;
     width: 50vw;
-    // background: chocolate;
     background: url(../../shared/img/login_half.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   &.account--photo {
@@ -340,14 +339,24 @@
 }
 
 @media screen and (max-width: 520px) {
-
+.bckgrndImg {
+  display: none;
+}
+.account__wrapper1 {
+  width: 100vw;
+}
+.forgotP {
+  font-size: 10px;
+}
   .account__card {
     padding: 35px 30px;
   }
 }
 
 @media screen and (max-width: 425px) {
-
+  .bckgrndImg {
+    display: none;
+  }
   .account__btns {
     flex-wrap: wrap;
   }

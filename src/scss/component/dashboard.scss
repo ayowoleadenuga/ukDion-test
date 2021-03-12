@@ -1,5 +1,8 @@
 .dashboard {
     padding: 1em 5em;
+    @media screen and (max-width: 700px) {
+        padding: 1em 2em;
+    }
     .firstHalf {
         margin-bottom: 40px;
         width: 100%;
@@ -102,10 +105,16 @@
 	padding-bottom: 8px;
 	padding-top: 8px;
 	margin-bottom: 16px;
+    @media screen and (max-width: 700px) {
+        flex-wrap: wrap;
+    }
 	button {
 		width: 120px;
 		font-family: 'Roboto', sans-serif;
 		font-weight: bold;
+        @media screen and (max-width: 700px) {
+            transform: scale(0.8);
+        }
 	}
     .image {
         width: 64px;
@@ -127,12 +136,21 @@
             color: #23286b;
             font-size: 1rem;
             font-weight: 600;
+            line-height: 20px !important;
             font-family: PoppinsBold;
+            @media screen and (max-width: 700px) {
+                line-height: unset;
+                font-size: 12px;
+            }
         }
         p {
             margin-top: unset;
             font-size: 0.8125rem;
+            @media screen and (max-width: 700px) {
+                font-size: 9px;
+            }
         }
+
     }
     .time {
         display: flex;
@@ -141,6 +159,9 @@
         p {
             font-size: 0.8125rem;
             margin-top: unset;
+            @media screen and (max-width: 700px) {
+                font-size: 12px;
+            }
         }
         svg {
             height: 16px;

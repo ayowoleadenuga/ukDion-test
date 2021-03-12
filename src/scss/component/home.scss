@@ -1,5 +1,8 @@
 .home {
     padding: 1em 5em;
+    @media screen and (max-width: 700px) {
+        padding: 1em 2em;
+    }
     .firstHalf {
         h2 {
             font-weight: bold;
@@ -108,14 +111,18 @@
         .hr {
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
+            
             justify-content: space-between;
+            @media screen and (max-width: 700px) {
+                flex-wrap: wrap;
+            }
         }
         
     }
 }
 .CourseCard {
-    width: 23%;
+    min-width: 23%;
+    margin-bottom: 20px;
 	div {
 		padding: 12px 12px 15px 7px;
 		border: 3px solid #f6f7f8;
@@ -140,7 +147,8 @@
 }
 .recommended {
     display: flex;
-    width: 30%;
+    min-width: 30%;
+    margin-bottom: 20px;
 	img {
 		width: 120px;
 		height: 117px;
@@ -150,12 +158,19 @@
 		color: #102a43;
 		font-size: 1.125rem;
 		font-weight: 600;
+        @media screen and (max-width: 525px) {
+            font-size: 10px;
+        }
 	}
 	p {
 		font-size: 0.9rem;
 		line-height: 19px;
         margin-top: unset !important;
 		color: #6a7588;
+        @media screen and (max-width: 525px) {
+            font-size: 11px;
+            line-height: 12px;
+        }
 	}
 	h4 {
 		color: #c1c8ce;

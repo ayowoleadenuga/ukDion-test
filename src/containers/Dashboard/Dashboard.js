@@ -54,7 +54,7 @@ export default function Dashboard() {
     return (
         <Col lg={12} className="dashboard">
             <Row>
-                <Col lg={7} md={7}>
+                <Col lg={7} md={12} sm={12}>
                     <Row>
                         <div className="firstHalf">
                             <div>
@@ -90,14 +90,14 @@ export default function Dashboard() {
                         </Col>
                     </Row>
                 </Col>
-                <Col lg={5} md={5}>
+                <Col lg={5} md={12} sm={12}>
                     <CourseCountCard />
                 </Col>
             </Row>
             <br />
             <br />
             <Row>
-                <Col lg={7} md={7} className="no_padding_left">
+                <Col lg={7} md={12} sm={12} className="no_padding_left">
                     <div className="courses">
                         <p className="headText ml-15">My courses</p>   
                         <ul className="courseNav">
@@ -111,7 +111,7 @@ export default function Dashboard() {
                         ))
                     }
                 </Col>
-                <Col lg={5} md={5}>
+                <Col lg={5} md={12} sm={12}>
                     <div className="imageBlock">
                         <p className="headText">Your Statistics</p>  
                         <div className="flex">
